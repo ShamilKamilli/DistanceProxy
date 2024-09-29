@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Carter" Version="6.1.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DistanceProxy.Application\DistanceProxy.Application.csproj" />
+    <ProjectReference Include="..\DistanceProxy.Common\DistanceProxy.Common.csproj" />
+    <ProjectReference Include="..\DistanceProxy.Infrastructure\DistanceProxy.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
